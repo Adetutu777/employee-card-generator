@@ -1,0 +1,91 @@
+
+  
+
+body{
+	background-color: rgb(244,244,244);
+	font-family:sans-serif; 
+	text-decoration: none;
+	outline: none;
+}
+
+ h1{
+font-family: cursive;
+	text-align: center;
+    font-size: 30px;
+    /* margin:5% auto; */
+color: black;
+}
+
+.sign-up,
+.accountCheck,
+.sectionTwo{
+	background-color: white;
+  width:250px;
+  background:#fff;
+  padding:20px 50px;
+  margin:1% auto;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  height: 170px;
+  border-radius: 10px;
+}
+
+.sectionTwo{
+	height: 250px;
+	display: none;
+}
+
+.accountCheck{
+	margin:40 0 50px;
+	margin:1% auto;
+	height: 15px;
+	text-decoration: none;
+	outline: none;
+	color: black;
+}
+.accountCheck a{
+	color: #3897f0;
+	text-decoration: none;
+}
+
+.account{
+	color: #3A98F0;
+	margin-top: 2px;
+	padding-top: 2px;
+	font-weight: bold;
+	text-align: center;
+	width: 100%
+	
+}
+
+ .input-box{
+	width: 250px;
+	padding: 10px;
+	margin: 8px 0;
+	color: gray;
+	background-color: #f4f4f4;
+	border:none;
+	border-radius: 5px;
+}
+
+.button{
+	width: 220px;
+	padding: 5px;
+	margin: 6% auto;
+	border:none;
+	background-color: #1069bd;
+	color: #fff;
+	border-radius: 10px;
+	font-weight: bolder;
+	line-height: 1.15rem;
+	text-align: center;
+} 
+
+ .input-boxTwo{
+	width: 330px;
+	padding: 20px 20px 20px 3px;
+	margin: 10px 0;
+	color: #eee;
+	border-radius: 5px;
+	background-color:#edf2f7;
+	border:none;
+} 
