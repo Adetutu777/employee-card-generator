@@ -16,6 +16,11 @@ font-family: cursive;
 color: black;
 }
 
+#error-text{
+	color:red;
+text-align: center;
+font-size: 0.97rem;
+}
 .sign-up,
 .accountCheck,
 .sectionTwo{
@@ -25,13 +30,13 @@ color: black;
   padding:20px 50px;
   margin:1% auto;
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-  height: 170px;
+  /*height: 170px;*/
   border-radius: 10px;
 }
 
 .sectionTwo{
 	height: 250px;
-/* 	display: none; */
+	/* display: none; */
 }
 
 .accountCheck{
