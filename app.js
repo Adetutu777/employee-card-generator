@@ -47,7 +47,9 @@ let newDept = document.getElementById('new-depart');
 
    	else{
    		errrorOutput.innerHTML ='Wrong Username/Password';
-   	}
+       }
+       
+       localStorage.setItem('myStaffRecords', JSON.stringify(users));
 
       }
 
@@ -76,7 +78,7 @@ let newDept = document.getElementById('new-depart');
 
             
 
-            localStorage.setItem('myStaffRecords', JSON.stringify(users));
+            
 
           }
 
