@@ -24,9 +24,13 @@
 
 // buttonOne Dom manipulation
 let buttonOne = document.getElementById('button-one');
+let buttonTwo = document.getElementById('button-two');
 let staff = document.getElementById('class-check-one');
 let pass = document.getElementById('class-check-two');
 let errrorOutput = document.getElementById('error-text');
+let newUser = document.getElementById('new-user');
+let newPass = document.getElementById('new-password');
+let newDept = document.getElementById('new-depart');
 
    let valRecords =()=> {
       let nameVal = staff.value;
@@ -47,4 +51,36 @@ let errrorOutput = document.getElementById('error-text');
 
       }
 
+
+    //   let newRecords =(ev)=>{
+        //   ev.preventDefault();
+
+        let newRecords =()=>{
+
+            let userNew=newUser.value;
+            let passNew = newPass.value;
+            let deptNew = newDept.value;
+
+       let checkRec =()=>{
+           userNew;
+            passNew;
+            deptNew;
+
+        }
+
+          newUser.value='';
+          newPass.value='';
+          newDept.value='';
+
+            users.push(checkRec);
+
+            
+
+            localStorage.setItem('myStaffRecords', JSON.stringify(users));
+
+          }
+
+      
+
 buttonOne.addEventListener('click', valRecords)
+// buttonTwo.addEventListener('click', newRecords)
