@@ -21,6 +21,39 @@
 ]
 
 // buttonOne Dom manipulation
+let buttonOne = document.getElementById('button-one');
+let buttonTwo = document.getElementById('button-two');
+let staff = document.getElementById('class-check-one');
+let pass = document.getElementById('class-check-two');
+let errrorOutput = document.getElementById('error-text');
+let newUser = document.getElementById('new-user');
+let newPass = document.getElementById('new-password');
+let newDept = document.getElementById('new-depart');
+
+   let valRecords =()=> {
+      let nameVal = staff.value;
+      let passVal = pass.value;
+   	const checkname = users.some(person => person.username == nameVal)
+   	const checkpass = users.some(person => person.password == passVal)
+   	staff.value ='';
+     pass.value='';
+
+   	if (checkname && checkpass ===true){
+       console.log('right records')
+       users.forEach((person) => {
+          if(person.username == nameVal) {
+            localStorage.setItem('loggedInUser', JSON.stringify(person));
+            location.assign("./dashboard.html");
+          
+          }
+       })
+   	}
+
+   	else{
+   		errrorOutput.innerHTML ='Wrong Username/Password';
+       }
+       
+       localStorage.setItem('myStaffRecords', JSON.stringify(users));
 
 const buttonOne = document.getElementById('button-one'),
 buttonTwo = document.getElementById('button-two'),

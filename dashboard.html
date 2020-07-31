@@ -1,18 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee portal | Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <h1>This is a dashboard </h1>
-
-    <p> Welcome; <span class='user'>
-    </p>
-</body>
+<html lang= "en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> NotePad App</title>
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body>
+        <div id="id-container">
+            <div id="profile-container">
+                <img  src="images/african-woman 1.png " alt="employee profile picture">
+                <div>
+                    <h3 id="name">Christiana Olaoye</h3>
+                    <p id="department">Software Engineering</p>
+                    <p id="employee-id">NOTERIA-122341RR1</p>
+                </div>
+            </div>
+            <div id="new-note"> 
+                <img src="images/plus.png" alt="plus">
+                <p>New Note</p>
+            </div>
+            <div id="standup-lists">
+                <p id="loner">Saved Standups</p>
+                <ul id="standuplist-container">
+                    <li>
+                        <img class="small" src="images/bullet.png" alt="bullet">
+                        <p>22nd July, 2020</p>
+                        <img class="tiny" src="images/trash-can.png">
+                    </li>
+                    <li>
+                        <img class="small" src="images/bullet.png" alt="bullet">
+                        <p>21st July, 2020</p>
+                        <img class="tiny" src="images/trash-can.png">
+                    </li>
+                    <li>
+                        <img  class="small" src="images/bullet.png" alt="bullet">
+                        <p>20th July, 2020</p>
+                        <img class="tiny" src="images/trash-can.png">
+                    </li>
+                    <li>
+                        <img class="small" src="images/bullet.png" alt="bullet">
+                        <p>19th July, 2020</p>
+                        <img class="tiny" src="images/trash-can.png">
+                    </li>
+                    
+                </ul>
+            </div>    
+        </div>
+        <div id="standup-container">
+            <h5 id="log-out">Logout</h5>
+            <div id="center-logo"  >
+                <img id="center-picture" class="show"
+                src="images/Noteria.png" alt="profile image">
+                <div id="standup-card" class="hide">
+                    <img src="images\/Noteria.png" alt="profile image">
+                    <h4>Create a new Standup</h4>
+                    <div class="form-input">
+                        <div class="label">
+                            <p>What did you achieve yesterday?</p>
+                        </div>
+                        <div class="content">
+                            <input id="yesterday" type="text" placeholder="What did you do yesterday?">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="label">
+                            <p>What do you intend to achieve today?</p>
+                        </div>
+                        <div class="content">
+                            <input id="today" type="text" placeholder="What do you intend to achieve today?">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="label">
+                            <p>Do you have any blockers?</p>
+                        </div>
+                        <div class="content">
+                            <input id="blockers" type="text" placeholder="Do you have any blockers?">
+                        </div>
+                    </div>
+                    <div class= "save-standup">
+                        <input id="save-button" type="button" value="Save Standup">
+                    </div>
+                </div>
+                <div id="delete-card" class="hide">
+                    <img src="images/Noteria.png" alt="profile image">
+                    <div id="trash-container">
+                        <img id="delete-image" src="images/black-trash.png">
+                        <div id="complete-standup">
+                            <h4>Do you want to delete standup?</h4>
+                            <input id="delete-button" type="button" value="OK">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+       
+    </body>
+    <script src="script.js"></script>
 </html>
 
