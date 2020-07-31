@@ -41,8 +41,14 @@ let newDept = document.getElementById('new-depart');
      pass.value='';
 
    	if (checkname && checkpass ===true){
-   		console.log('right records')
-   		location.assign("./dashboard.html");
+       console.log('right records')
+       users.forEach((person) => {
+          if(person.username == nameVal) {
+            localStorage.setItem('loggedInUser', JSON.stringify(person));
+            location.assign("./dashboard.html");
+          
+          }
+       })
    	}
 
    	else{

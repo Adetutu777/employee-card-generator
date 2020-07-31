@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+#id-container {
+    background-color: #1a1a1a;
+    width: 30%;
+    flex-direction: column;
+    
+}
+#id-container p, h3 {
+    color: white;
+}
+
+#profile-container {
+    display: flex;
+    padding: 20px;
+}
+#profile-container img {
+    width: 76px;
+    height: auto;
+    border-radius: 38px;
+}
+
+#profile-container div {
+    margin-left: 10px;
+}
+
+#new-note {
+    display: flex;
+    background-color: green;
+    height: 48px;
+    border-radius: 24px;
+    margin: 20px;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-note p {
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: bold;
+}
+
+#loner {
+    padding: 10px;
+
+}
+#standup-lists {
+    height: 100%;
+}
+#standup-lists ul {
+    background-color: #404040;
+
+}
+
+#standup-lists li {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+#standup-lists li p {
+    width: 80%;
+}
+
+.small {
+    width: 5px;
+    height: 5px;
+    margin-right:   1em;
+}
+
+.tiny {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-left: 1em;
+}
+
+#profile-container img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+ul {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+ 
+}
+
+#standup-container {
+    background-color: white;
+    width: 70%;
+    flex-direction: column; 
+    padding: 20px 50px 30px 50px;
+    display: flex;
+}
+
+#log-out {
+    background-color: white;
+}
+
+#center-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#center-picture {
+    width: 50%;
+    height: auto;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+#standup-container h5 {
+    text-align: end;
+    font-size: 1em;
+}
+
+#standup-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#standup-card img {
+    height: 40px;
+    width: auto;
+}
+
+#standup-card h4 {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.form-input {
+    box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.2);
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.label {
+    background-color: #404040;
+    height: 35%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    border-radius: 5px 5px 0 0;
+}
+.label p{
+    color: white;
+    font-size: 0.8em;
+    margin-left: 1em;
+}
+.content {
+    height: 65%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.content input[type="text"] {
+    border: none;
+    width: 100%;
+    outline: none;
+    background: white;
+    margin-left: 1em;
+    font-size: 1.2em;
+}
+
+.save-standup {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.save-standup input[type="button"] {
+    padding: 10px 30px 10px 30px;
+    margin-top: 15px;
+    background-color: #18A736;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-style: bold;
+    font-size: 1em;
+}
+#log-out {
+    background-color: white;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#delete-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#delete-card img {
+    height: 40px;
+    width: auto;
+}
+
+#trash-container {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    justify-content: center;
+}
+
+#delete-image {
+    height: 60px;
+    width: auto;
+}
+
+#complete-standup {
+    width: 45%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:  column;
+    font-size: large;
+    
+}
+
+#complete-standup input[type="button"] {
+    padding: 5px 30px 5px 30px;
+    margin-top: 5px;
+    background-color: #18A736;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-style: bold;
+    font-size: 1em;
+}
