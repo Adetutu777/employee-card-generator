@@ -1,7 +1,8 @@
 
   
 
-body{
+
+	body{
 	background-color: rgb(244,244,244);
 	font-family:sans-serif; 
 	text-decoration: none;
@@ -12,32 +13,36 @@ body{
 font-family: cursive;
 	text-align: center;
     font-size: 30px;
-    /* margin:5% auto; */
 color: black;
 }
 
-#error-text{
-	color:red;
+#error-text, #error-text-sign-up{
 text-align: center;
 font-size: 0.97rem;
+font-weight:bold;
 }
+
+.error{
+	color:red;
+}
+
+.success{
+	color:green;
+}
+
+
 .sign-up,
 .accountCheck,
-.sectionTwo{
+.section-two{
 	background-color: white;
   width:250px;
   background:#fff;
   padding:20px 50px;
   margin:1% auto;
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-  /*height: 170px;*/
   border-radius: 10px;
 }
 
-.sectionTwo{
-	height: 250px;
-	/* display: none; */
-}
 
 .accountCheck{
 	margin:40 0 50px;
@@ -46,6 +51,7 @@ font-size: 0.97rem;
 	text-decoration: none;
 	outline: none;
 	color: black;
+	cursor: pointer;
 }
 .accountCheck a{
 	color: #3897f0;
@@ -72,6 +78,10 @@ font-size: 0.97rem;
 	border-radius: 5px;
 }
 
+button{
+	cursor:pointer;
+}
+
 .button{
 	width: 220px;
 	padding: 5px;
@@ -93,4 +103,8 @@ font-size: 0.97rem;
 	border-radius: 5px;
 	background-color:#edf2f7;
 	border:none;
-} 
+}
+
+.section-two, #sign-in-btn{
+	display:none;
+}
