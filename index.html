@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,17 +15,17 @@
 			
 
 <section>
-        <div class="sign-up">
-
+        <div class="sign-up" id ='sign-up'>
         
-        <form>
+
+             <form>
         		<p id ='error-text'></p>
             <label form="staff no" 
             class="staff" >
             <b>Username:</b>
         	</label> <br>
 
-            <input type="username" 
+            <input type="text" 
             class="input-box" 
             id="class-check-one" 
             placeholder="Enter your username" 
@@ -39,8 +41,8 @@
             id="class-check-two" 
             placeholder="Enter Password" 
             ></br>
-            </form>
-
+           
+                </form>
             <button type="submit" 
             class="signup button" 
             id="button-one">
@@ -50,10 +52,67 @@
             </div>
         </section> 
 
-                    <div class="accountCheck">
-                <p class ="account"> Don't have an account?
-              	<a href ="../signup.html">Sign up</a></p>
+                    <div class="accountCheck" id='sign-up-btn'>
+                <p class ="account"> Don't have an account? Sign up
+              	</p>
             </div>
+
+    <div class="section-two" id='section-two'>
+        <form>
+
+    <label form="staff no" 
+            class="staff" >
+            <p id ='error-text-sign-up'></p>
+
+            <b>Create Username:</b>
+            </label> <br>
+
+            <input type="text" 
+            class="input-box" 
+            id="new-user" 
+            placeholder="Enter new username" 
+            required>
+            <br>
+        
+            <label form="pass" 
+            class="pass">
+            <b>Create Password:</b>
+            </label> <br>
+
+            <input type="password" 
+            class="input-box" 
+            id="new-password" 
+            placeholder="Enter new Password" 
+            required 
+            ><br>
+           
+
+            <label form="pass" 
+            class="pass">
+            <b>Department:</b>
+            </label> <br>
+
+            <input type="text" 
+            required
+            class="input-box" 
+            id="new-depart" 
+            placeholder="Enter new Department" 
+
+            ><br>
+            </form>
+
+            <button class="signup button" 
+            id="button-two">
+            SIGN UP
+               </button>
+
+            </div>
+                             <div class="accountCheck" id='sign-in-btn'>
+                <p class ="account"> Have An Account? Sign in
+                </p>
+            </div>
+
+
            
 
 
