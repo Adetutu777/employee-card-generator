@@ -17,7 +17,7 @@ const LogoutButton = document.getElementById("log-out");
 
 // get user and standups from local storage and convert to JSON
 const user = JSON.parse(window.localStorage.getItem('loggedInUser'));
-const staffId = user.staffIdNo;
+const staffId = user.username;
 let standupArray = JSON.parse(window.localStorage.getItem(staffId));
 
 //display user content on the left panee
